@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modificar Usuario</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/principal.css">
+</head>
+
+<body>
+
+  <header class="navbar-expand-md  bg-dark">
+    <a class="navbar-brand" href="Principal.HTML">
+      <img src="img/Logomaranata.png" width="40px">
+      <span class="text-white"> | Liceo Maranata</span>
+    </a>
+  </header>
+
+  <!--inicio del menú-->
+  <div class="container-expand">
+    <div class="container-expand">
+      <nav class="navbar navbar-expand bg-dark">
+        <div class="container-fluid">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link " data-bs-toggle="collapse" data-bs-target="#gUsuario" aria-expanded="false"
+                aria-controls="collapseWidthExample" aria-current="page" href="#">Gestión de usuarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Gestión de estudiantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Grado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Gestión recibo matricula</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Año lectivo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gestión de recibo de pensión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gestión paz y salvo</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-danger ml-auto" href="/index.HTML"><i class="fas fa-power-off m-1"></i>Cerrar
+            Sesión</a>
+
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid ">
+      <div class="row collapse collapse-horizontal" id="gUsuario">
+        <div class="barra-lateral col-12 col-sm-auto">
+          <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+            <a href="#"><i class="fas fa-user-plus"></i><span>Crear Usuario</span></a>
+            <a href="#"><i class="fas fa-search"></i><span>Buscar Usuario</span></a>
+            <a href="#"><i class="fas fa-user-edit"></i><span>Modificar Usuario</span></a>
+            <a href="#"><i class="fas fa-clipboard-list"></i><span>Listar Usuario</span></a>
+          </nav>
+        </div>
+
+        <!-- DATOS PERSONALES -->
+
+        <div class="col p-5 rounded mx-5 ">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="p-5 mb-4 mi-azul rounded-3">
+              <div class="container-fluid text-light py-5">
+                <h1 class="display-5 text-center fw-bold">Modificar Usuario</h1>
+                <div class="row">
+                  <div class="col"> <label for="documento" class="form-label "> Tipo Documento</label>
+                    <select class="form-select" id="documento" required>
+                      <option selected disabled value="">Tipo...</option>
+                      <option value="">TI</option>
+                      <option value="">CC</option>
+                    </select>
+                  </div>
+                  <div class="col"><label for="n-documento" class="form-label">Número Documento</label>
+                    <input type="text" class="form-control" id="n-documento" placeholder="Número de Documento" required></div>
+                </div>
+                <div class="row">
+                  <div class="col"> <label for="nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombres" required></div>
+                  <div class="col"> <label for="apellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" name="apellido" placeholder="Apellidos" required></div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="nacimiento" class="form-label">Fecha Nacimiento</label>
+                    <input type="date" name="nacimiento" id="" class="form-control"></div>
+                  <div class="col"><label for="celular" class="form-label">Celular</label>
+                    <input type="tel" class="form-control" name="celular" placeholder="ej: 3219004573" required></div>
+                </div>
+                <div class="row">
+                  <div class="col"> <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" name="correo" placeholder="ej: liceomaranata@gmmail.com" required>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col"> <label for="pass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Contraseña" required></div>
+                  <div class="col"> <label for="r-pass" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" name="r-pass" placeholder="Confirmar Contraseña" required></div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-light" type="submit"><i class="fas fa-pencil-square"></i> Modificar</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/646c794df3.js"></script>
+</body>
+
+</html>
